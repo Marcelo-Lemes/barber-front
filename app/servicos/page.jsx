@@ -158,7 +158,9 @@ export default function Services() {
                 </tbody>
               </table>        
             :
-            <Loading />
+            <div>
+              <Loading />
+            </div>
           }
            {/* Adicionar novo serviço */}
         {showModal ? <AddModal setShowModal={setShowModal}/> : null}
