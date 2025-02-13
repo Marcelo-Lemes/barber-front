@@ -23,7 +23,7 @@ export default function Services() {
   const {setData, user} = useContext(AuthContext);
 
   const backUrl = process.env.NEXT_PUBLIC_API_URL;
-  const token = localStorage.getItem('authToken');
+  const token = typeof window !== "undefined" ? localStorage.getItem('authToken') : null;
 
 
   const editService = async (service) => {
