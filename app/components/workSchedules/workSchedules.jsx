@@ -61,7 +61,7 @@ const WorkScheduleForm = ({modal}) => {
   ]);
 
   const backUrl = process.env.NEXT_PUBLIC_API_URL;
-  const token = localStorage.getItem('authToken');
+  const token = typeof window !== "undefined" ? localStorage.getItem('authToken') : null;
 
   const { id } = useParams();
   
