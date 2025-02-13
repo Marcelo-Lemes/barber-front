@@ -1,100 +1,112 @@
-import Image from "next/image";
+'use client'
+
+import Banner from "./components/banner/banner";
+import { FaInstagram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa6";
+import { RiArrowDownSLine } from 'react-icons/ri';
+
+
+import './home.css';
+import Carousel from "./components/carrousel/carousel";
+import Link from "next/link";
+
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+  return (
+    <div id="home-page">
+      <section className="home-section-orange">
+        <img className="bg-home-img" src="bg-white.jpg" alt="" />
+          <ul id="home-nav" >
+            <Link href='#sobre'>
+              <li>Sobre</li>
+            </Link>
+            <Link href='#galeria'>
+              <li>Galeria</li>
+            </Link>
+            <Link href='#agendamento'>
+              <li>Agendamento</li>
+            </Link>
+            <Link href='#contato'>
+              <li>Contato</li>
+            </Link>
+          </ul>
+          <div id="section-one-box">
+            <img id="home-logo" src="barber-logo.png" alt="" />
+            {/* <img id="bg-home-logo" src="tinta.png" alt="" /> */}
+            <h1 id="home-slogan">
+              O destino certo para um visual impecável!
+            </h1>
+            <Link href='#sobre'>
+              <RiArrowDownSLine id="down-arrow" data-aos="fade-down"/>
+            </Link>
+          </div>
+      </section>
+      <section className="home-section-white" id="sobre">
+        <img className="bg-home-img-black" src="bg-white.jpg" alt="" />
+        <h1 className="home-titles"></h1>
+        <div id="info-home-container">
+          <div id="info-home-text-box">
+              <h3>Bem-vindo à Rei da Régua!</h3>
+          {/* <img id="home-info-logo" src="barber-logo.png" alt="" /> */}
+              <p>
+                Nós acreditamos que cada cliente merece mais do que um simples corte de cabelo e sim uma experiência única. Aqui, combinamos tradição e modernidade para oferecer um ambiente acolhedor, onde estilo e cuidado pessoal se encontram.
+                Nosso objetivo é proporcionar um serviço de excelência, com profissionais experientes e dedicados a entender o que você realmente precisa. Seja para um corte clássico, um visual moderno ou aquele cuidado especial com a barba, estamos prontos para garantir que você saia daqui confiante e satisfeito.</p>
+          <div>
+              <img id="homen-img"  src="local.jpg" alt="" /> 
+          </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section className="home-section-orange" id="galeria">
+        <img className="bg-home-img" src="bg-white.jpg" alt="" />
+        <div id="title-img-box">
+          <img id="title-img" className='teste' src="galeria7.png" alt="" />
+        </div>
+        <Carousel id='carousel'/>
+        <div id="home-box-images">
+          <img id="mj-img" className="port-images" src="corte-4.jpg" alt="" />
+          <img className="port-images" src="corte-1.jpg" alt="" />
+          <img className="port-images" src="corte-3.jpg" alt="" />
+          <img className="port-images" src="corte-2.jpg" alt="" />
+        </div>
+        <div style={{textAlign: 'center'}}>
+          <a href="https://www.instagram.com/reida_regua/" target="_blank" rel="noopener noreferrer">
+            <button id="insta-btn" className="hero-button ">Confira nosso instagram <FaInstagram /></button>
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+      <section className="home-section-white" id="agendamento">
+        <img className="bg-home-img-black" src="bg-white.jpg" alt="" />
+        <Banner />
+      </section>
+      <div id="contato-container" style={{display: 'flex'}}>
+        <div id="map-box">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.79181184479398!2d-45.70554445531556!3d-22.252634533537577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cba3dd86d63329%3A0x460832be8326b352!2sRei%20da%20R%C3%A9gua%20%7C%20Barbearia!5e0!3m2!1spt-BR!2sbr!4v1736966017253!5m2!1spt-BR!2sbr" id="contato-map" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="contato">
+          <h3 className="contact-title">Contato</h3>
+          <p>(35) 99187-6307</p>
+          <h3 className="contact-title">Horários</h3>
+          <p>Seg a Sex ........... 08:00 às 19:00</p>
+          <p>Sábado .............. 08:00 às 17:00</p>
+          <div id="contato-icon-box">
+          
+            <a href="https://wa.me/5535991876307" target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp className="contato-icons whats"/>
+            </a>
+            <a href="https://www.instagram.com/reida_regua/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="contato-icons insta"/>
+            </a>
+          </div>
+        </div>
+      </div>
+      <footer id='footer'>
+        <p>Alameda das Flores - Praça Santa Rita, 6 - Centro, Santa Rita do Sapucaí - MG, 37536-060</p>
+        <p>Barbearia Rei da Régua 2025. Todos os direitos reservados.</p>
       </footer>
     </div>
   );

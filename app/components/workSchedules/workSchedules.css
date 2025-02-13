@@ -1,0 +1,59 @@
+#work-schedules-container {
+    border: none !important;
+    max-height: 85vh;
+    overflow: auto;
+}
+
+#work-schedules-box {
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    text-align: center;
+    margin: auto;
+}
+
+#week-container {
+    max-width: 300px !important;
+    min-height: fit-content;
+    margin: auto;
+    text-align: center;
+    margin: 15px auto;
+    padding: 30px !important;
+}
+
+#ws-btn-box {
+    display: block;
+    text-align: center;
+    width: fit-content;
+    margin: auto ;
+}
+
+.ws-btn {
+    background-color: rgb(39, 115, 255);
+    border: none;
+    color: white;
+    width: fit-content;
+    padding: 10px;
+    margin: auto 15px;
+    text-align: center;
+}
+
+.ws-btn:hover {
+    background-color: rgb(16, 71, 175);
+}
+
+@media (max-width: 1500px) and (orientation: landscape) {
+
+    #work-schedules-box {
+        /* display: grid;
+        grid-template-columns: repeat(2, 1fr); */
+        text-align: center;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #work-schedules-box {
+        text-align: center;
+        margin: auto;
+    }
+}

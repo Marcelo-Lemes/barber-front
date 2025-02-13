@@ -1,0 +1,43 @@
+#hora-page {
+    margin-left: 18vw;
+    background-color: white;
+    min-height: 100vh;
+}
+
+#hora-title {
+    color: rgb(255, 123, 0);
+    margin: 0;
+    padding: 20px 0;
+}
+
+@media (max-width: 1500px) and (orientation: landscape) {
+    #hora-page {
+        margin-left: 20vw;
+    }
+}
+
+@media (max-width: 1200px ) and (orientation: landscape) {
+}
+
+@media (max-width: 1024px ) {
+    #hora-page {
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px  ) {
+    #hora-page {
+        margin: auto;
+        padding-bottom: 100px;
+     }
+}
+
+@media (max-width: 480px) {
+    #hora-page {
+       margin: auto;
+    }
+}
+
+@media (max-width: 320px) {
+
+}

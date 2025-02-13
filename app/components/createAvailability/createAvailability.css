@@ -1,0 +1,71 @@
+#availab-container {
+
+}
+
+#availab-form {
+    max-width: 90vw;
+    min-width: 20vw;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) ;
+}
+
+#availab-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.availab-label-box {
+    margin-bottom: 15px;
+    min-width: 20vw;
+    max-width: 80vw;
+}
+
+.availab-label {
+    min-width: 20vw;
+    max-width: 80vw;
+}
+
+.availab-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+
+.availab-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin: auto 10px;
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#availab-text {
+    margin-top: 10px;
+    text-align: center;
+    color: green;
+}
+
+@media (max-width: 768px) {
+    #availab-form {
+        width: 85vw;
+    }
+    .availab-label-box {
+        width: 80vw;
+    }
+    .availab-label {
+        width: 90%; 
+    }
+}

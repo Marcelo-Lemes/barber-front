@@ -1,0 +1,26 @@
+.edit-worker-modal {
+    display: block;
+    position: relative;
+    background: #fff;
+    padding: 2.5rem 2rem;
+    padding-bottom: 50px;
+    border-radius: 2px;
+    width: 35vw;
+    height: fit-content;
+}
+
+#button-box {
+    text-align: center;
+}
+
+#button-box > button {
+    margin: auto 15px;
+}
+
+@media (max-width: 768px  ) {
+    .edit-worker-modal {
+        width: 90vw;
+        margin-bottom: 70px;
+
+    }
+}

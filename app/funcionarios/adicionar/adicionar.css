@@ -1,0 +1,34 @@
+body {
+    background-color: #EDEDED;
+}
+#func-add-page {
+    width: auto;
+    margin-left: 20vw;
+   
+
+}
+
+#func-add-box {
+    margin: 70px auto;
+    width: 55vw;
+    padding: 20px 30px 50px;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.158);
+    border: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+
+@media (max-width: 768px  ) {
+    #func-add-page {
+        margin: auto;
+    }
+    #func-add-box {
+        margin: 30px auto 100px;
+        width: 90vw;
+        padding: 15px 0;
+        background-color: white;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.158);
+        border: 1px solid rgba(0, 0, 0, 0.11);
+    }
+    
+}

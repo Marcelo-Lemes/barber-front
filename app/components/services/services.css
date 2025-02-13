@@ -1,0 +1,120 @@
+#service-box {
+    width: 100%;
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 0rem 2rem;
+    background: #ffffff;
+    border-radius: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+  
+  #service-message {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Lista de serviços */
+  #service-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  /* Cartão de serviço */
+  .service-card {
+    background: #ffffff;
+    padding: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.034);
+    border: 1px solid #e0e0e0;
+  }
+  
+  .service-card:hover {
+    background: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    border-color: #000000;
+
+  }
+  
+  /* Nome do serviço */
+  .service-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 1rem;
+    letter-spacing: 0.3px;
+  }
+  
+  /* Detalhes do serviço */
+  .service-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.8rem;
+  }
+
+@media (max-width: 1200px ) and (orientation: landscape) {
+
+}
+
+@media (max-width: 1024px ) and (orientation: landscape) {
+
+}
+
+@media (max-width: 768px  ) {
+
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        background: #ffffff;
+        padding: 1.2rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-align: center;
+        box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.034);
+        border: 1px solid #e0e0e0;
+      }
+      .service-name {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #222;
+        margin-bottom: 1rem;
+        letter-spacing: 0.3px;
+      }
+      
+      /* Detalhes do serviço */
+      .service-details {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9rem;
+        color: #666;
+        margin-top: 0.8rem;
+      }
+      #service-message {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        color: #333;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+      }
+
+      #service-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+      }
+      
+}
+
+@media (max-width: 320px) {
+
+}

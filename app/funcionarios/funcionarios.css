@@ -1,0 +1,72 @@
+#funcionario-page {
+    margin-left: 18vw;
+    padding: 0;
+    background-color: white;
+    min-height: 100vh;
+
+}
+
+#func-box {
+    width: fit-content;
+    margin: auto;
+    padding: 0;
+    background-color: white;
+}
+
+#func-button-add {
+    margin: 30px 0 100px;
+    border-radius: 0;
+    font-size: 18px;
+    width: 150px !important;
+    background-color: white;
+    color:  rgb(46, 46, 46);
+    border-color:  rgb(46, 46, 46);
+}
+
+#func-button-add:hover {
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+#func-title {
+    color: rgb(255, 123, 0);
+    margin: 0;
+    padding: 20px 0;
+}
+
+@media (max-width: 1500px) and (orientation: landscape) {
+    #funcionario-page {
+        margin-left: 20vw;
+
+    }
+}
+
+@media (max-width: 1200px ) and (orientation: landscape) {
+
+}
+
+@media (max-width: 1024px ) {
+    #funcionario-page {
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px  ) {
+    #funcionario-page {
+        margin: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #funcionario-page {
+        margin: 0;
+    }
+    #func-button-add {
+        font-size: 16px;
+        margin: -50px 0 100px;
+    }
+}
+
+@media (max-width: 320px) {
+
+}

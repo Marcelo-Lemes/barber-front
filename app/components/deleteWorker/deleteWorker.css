@@ -1,0 +1,64 @@
+#delete-worker-container {
+    background-color: white;
+    padding: 50px;
+}
+
+#delete-btn-box {
+    text-align: center;
+    margin-top: 25px;
+}
+
+#delete-yes-btn {
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid green;
+    color: green;
+    margin: auto 10px;
+    font-size: 1.1rem;
+    width: 150px;
+}
+
+#delete-yes-btn:hover {
+    background-color: green;
+    color: white;
+}
+
+#delete-no-btn {
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid red;
+    color: red;
+    margin: auto 10px;
+    font-size: 1.1rem;
+    width: 150px;
+}
+
+#delete-no-btn:hover {
+    background-color: red;
+    color: white;
+}
+
+@media (max-width: 768px  ) {
+    #delete-worker-container {
+        width: 80vw;
+    }
+
+    .delete-title {
+        font-size: 18px;
+        text-align: center;
+    }
+
+
+    #delete-no-btn {
+        width: fit-content;
+        font-size: 0.9rem;
+        padding: 5px 15px;
+    }
+
+    #delete-yes-btn {
+        width: fit-content;
+        font-size: 0.9rem;
+        padding: 5px 15px;
+    }
+
+}

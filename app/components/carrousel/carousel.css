@@ -1,0 +1,93 @@
+/* CSS Global */
+.carousel-container img {
+  width: 280px;
+  height: 330px; /* A altura é ajustada automaticamente com base na largura */
+  border: 5px solid rgb(255, 255, 255);
+  filter: drop-shadow(rgba(0, 0, 0, 0.171) 1rem 1rem 5px);
+}
+.carousel-container {
+    display: none;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden; /* Garante que a imagem não saia da área do carrossel */
+    text-align: center;
+  }
+  
+  /* Ajustando o estilo da imagem para ficar responsiva */
+  .carousel-container img {
+    width: 280px;
+    height: 330px; /* A altura é ajustada automaticamente com base na largura */
+    border: 5px solid rgb(255, 255, 255);
+    filter: drop-shadow(rgba(0, 0, 0, 0.171) 1rem 1rem 5px);
+  }
+  
+  /* Botões de navegação */
+  .carousel-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .carousel-container button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Botão da esquerda */
+  .carousel-container button:nth-child(2) {
+    left: 10px;
+  }
+  
+  /* Botão da direita */
+  .carousel-container button:nth-child(3) {
+    right: 10px;
+  }
+  
+  /* Ajustes específicos para dispositivos móveis */
+
+  @media (max-width: 1024px ) {
+    .carousel-container {
+      display: block;
+    }
+
+    .carousel-container img {
+      width: 600px;
+      height: 700px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .carousel-container {
+      display: block;
+    }
+    .carousel-container button {
+      padding: 12px; /* Botões menores em telas menores */
+    }
+
+    .carousel-container img {
+      width: 450px;
+      height: 550px;
+    }
+
+  }
+  
+  /* Ajuste para telas muito pequenas (smartphones muito pequenos) */
+  @media (max-width: 480px) {
+    .carousel-container button {
+      padding: 10px; /* Botões ainda menores */
+    }
+
+    .carousel-container img {
+      width: 65vw;
+      height: 80vw;
+    }
+
+  }
+  

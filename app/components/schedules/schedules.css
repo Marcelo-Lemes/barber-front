@@ -1,0 +1,129 @@
+#schedule-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#schedule-text {
+    margin-top: 2vw;
+}
+
+.react-calendar {
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#schedules-box {
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1px;
+    width: 35vw; /* Garante a largura total */
+    margin: 0 auto; /* Centraliza */
+}
+
+#schedules-times {
+    text-align: center;
+    margin: 20px;
+    border: 1px solid black;
+    padding: 12px;
+    cursor: pointer;
+}
+
+
+#schedules-times > p {
+    margin: auto;
+}
+
+#schedules-times:hover {
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+.selected {
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+#period {
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    list-style: none;
+    padding: 0;
+}
+
+#period > li {
+    width: fit-content;
+    margin: auto 15px;
+    text-align: center;
+    cursor: pointer;
+    color: gray;
+}
+
+#period > li:hover {
+    color: black;
+    text-decoration: underline;
+
+}
+
+.selectedP {
+    color: black !important;
+    text-decoration: underline;
+}
+
+#schedule-btn {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#sche-btn:hover {
+    background-color: black !important;
+    color: white;
+}
+
+@media (max-width: 1200px ) and (orientation: landscape) {
+
+}
+
+@media (max-width: 1024px ) {
+    #period {
+        width: 100vw;
+    }
+    #schedules-box {
+        grid-template-columns: repeat(2, 1fr); /* 3 colunas */
+        gap: 1px;
+        width: 80%; /* Garante a largura total */
+        margin: 0 auto; /* Centraliza */
+    }
+}
+
+@media (max-width: 768px  ) {
+    #period {
+        width: 100vw;
+    }
+    #schedules-box {
+        grid-template-columns: repeat(2, 1fr); /* 3 colunas */
+        gap: 1px;
+        width: 100%; /* Garante a largura total */
+        margin: 0 auto; /* Centraliza */
+    }
+}
+
+@media (max-width: 480px) {
+    #schedules-box {
+        grid-template-columns: repeat(2, 1fr); /* 3 colunas */
+        gap: 1px;
+        width: 100%; /* Garante a largura total */
+        margin: 0 auto; /* Centraliza */
+    }
+
+    #period {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 320px) {
+
+}

@@ -1,0 +1,16 @@
+.ws-modal {
+    width: 55vw;
+    padding: 50px;
+    background-color: white;
+}
+#add-worker-container {
+
+}
+
+@media (max-width: 768px  ) {
+    .ws-modal {
+        width: 90vw;
+        padding: 0px;
+        margin-bottom: 70px;
+    }
+}

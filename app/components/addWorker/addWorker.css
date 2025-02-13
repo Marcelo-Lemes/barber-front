@@ -1,0 +1,31 @@
+#add-worker-form {
+    width: 70% !important;
+    margin: auto;
+}
+
+#button-box {
+    text-align: center;
+}
+
+#add-work-title {
+    text-align: center;
+}
+
+#first-input-add {
+    margin-top: 30px;
+}
+
+.btn {
+    border-radius: 0;
+    margin: 10px;
+}
+
+@media (max-width: 768px  ) {
+    .add-work-label {
+        font-size: 14px;
+    }
+    .add-work-input {
+        font-size: 12px;
+        padding: 4px;
+    }
+}

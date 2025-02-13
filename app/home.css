@@ -1,0 +1,753 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+#home-page {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.home-section-orange {
+  background-color: #fa820a;
+  width: auto;
+  height: 101vh;
+}
+
+#home-nav {
+  display: flex;
+  width: 100%;
+  height: 0px;
+  background-color: #fa820a;
+  font-family: "DM Serif Text", serif;
+  list-style: none;
+  justify-content: right;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.199);
+}
+
+#home-nav > a {
+  position: relative;
+  font-size: 25px;
+  margin: 15px 20px;
+  cursor: pointer;
+  z-index: 99;
+  color: rgba(255, 255, 255, 0.822);
+
+}
+
+#home-nav > a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* #section-one-box {
+
+} */
+
+.bg-home-img {
+  position: absolute;
+  opacity: 0.2;
+  width: 100%;
+  height: 101vh;
+}
+
+.bg-home-img-black {
+  position: absolute;
+  opacity: 0.1;
+  width: 100%;
+  height: 101vh;
+  
+  
+}
+
+#home-slogan {
+  position: relative;
+  font-size: 80px;
+  color: rgb(255, 255, 255);
+  font-family: "Bebas Neue", serif;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.274);
+  z-index: 11;
+}
+
+.home-section-white {
+  background-color: #0B0B0D;
+  width: auto;
+  min-height: 101vh;
+}
+
+#local {
+ rotate:calc(190%);
+}
+
+#home-logo {
+  position: relative;
+  display: block;
+  width: auto;
+  height: 600px;
+  margin: auto;
+  padding-top: 50px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.274);
+  z-index: 11;
+}
+
+#bg-home-logo {
+  position: absolute;
+  width: 70vw;
+  top: 0;
+  left: 12%;
+  z-index: 10;
+  opacity: 0.5;
+
+}
+
+.home-titles {
+    position: relative;
+    margin: 0;
+    height: auto;
+    width: fit-content;
+    margin: auto;
+    padding: 50px 15px;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.233);
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+#home-box-images {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.port-images {
+  display: block;
+  position: relative;
+  width: 350px;
+  height: 450px;
+  border: 5px solid rgb(255, 255, 255);
+  margin: 25px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.171) 2px 2px 1px);
+
+}
+
+#insta-btn {
+  position: relative;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  color: #f5f2e8;
+  border: 2px solid #f5f2e8;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 100px;
+  font-size: 18px;
+}
+
+#insta-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+
+#info-home-container {
+  display: flex;
+  justify-content: center;
+}
+
+#info-home-text-box {
+  justify-content: center;
+  width: 80vw;
+  position: relative;
+  color: white;
+  margin: auto;
+
+}
+#info-home-text-box > div {
+  display: flex;
+  margin: auto;
+}
+
+#info-home-text-box > h3 {
+  font-size: 45px;
+  margin: auto;
+  margin-top: -25px;
+  text-align: center;
+
+}
+
+#info-home-text-box > p {
+  width: 60vw;
+  font-size: 18px;
+  text-align: center;
+  margin: 25px auto;
+}
+
+#homen-img {
+  position: relative;
+  bottom: 0;
+  width: 500px;
+  /* border: 5px solid white; */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  height: fit-content;
+  margin: auto;
+  transform: rotate(270deg);
+}
+
+#home-info-logo {
+  display: block;
+  width: 250px;
+  margin: auto;
+}
+
+#contato {
+  padding-top: 50px;
+  margin-top: 0px;
+  text-align: center;
+  width: 50vw;
+  background-color: #f0f0f0;
+  color: rgb(14, 13, 13);
+  height: 750px;
+}
+
+#contato > p {
+  margin-top: 30px;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.74);
+}
+
+.contact-title {
+  margin-top: 50px;
+  font-size: 3rem;
+}
+
+#footer {
+  height: 250px;
+  width: auto;
+  background-color: #000000;
+  padding: 100px;
+}
+
+#footer > p {
+  color: rgba(255, 255, 255, 0.884);
+  text-align: center;
+
+}
+
+#carousel {
+  display: none;
+}
+
+#contato-map {
+  width: 50vw;
+  height: 750px;
+}
+
+#map-box {
+  height: 750px;
+}
+
+#title-img-box {
+  text-align: center;
+}
+
+#title-img {
+  position: relative;
+  width: fit-content;
+
+}
+
+#contato-icon-box {
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.contato-icons {
+  font-size: 60px;
+  margin: 5px;
+  color: rgb(0, 0, 0);
+}
+
+.insta:hover {
+  color: #F70D92;
+}
+
+.whats:hover {
+  color: rgb(12, 161, 12);
+}
+
+#down-arrow {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80px;
+  height: auto;
+  color: #ffffff;
+  cursor: pointer;
+  opacity:0;
+  animation:anima-seta 1000ms ease infinite;
+}
+@keyframes anima-seta {
+  to {
+      opacity:1;
+      transform: translateY(28px);
+  }
+}
+
+#down-arrow:hover {
+  border-radius: 50%;
+  background-color: white;
+  color: #222222;
+}
+
+@media (max-width: 1500px) and (orientation: landscape) {
+
+  /* Section 1 */
+  #home-nav > a {
+    font-size: 22px;
+    margin: 15px;
+  }
+    
+  #home-logo {
+    height: 420px;
+
+  }
+
+  #home-slogan {
+    font-size: 55px;
+  }
+
+  .home-titles {
+    font-size: 80px;
+  }
+
+  #down-arrow {
+    width: 70px;
+  }
+
+  /* Section 2 */
+
+  #info-home-text-box {
+    justify-content: center;
+    width: 90vw;
+    position: relative;
+    color: white;
+    margin: auto;
+  
+  }
+  #info-home-text-box > div {
+    display: flex;
+    margin: auto;
+  }
+  
+  #info-home-text-box > h3 {
+    font-size: 30px;
+    margin: auto;
+    margin-top: -50px;
+    text-align: center;
+  
+  }
+  
+  #info-home-text-box > p {
+    width: 70vw;
+    font-size: 14px;
+    text-align: center;
+    margin: 25px auto;
+  }
+  
+  #homen-img {
+    position: relative;
+    bottom: 0;
+    width: 350px;
+    /* border: 5px solid white; */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    height: fit-content;
+    margin: auto;
+    margin-top: -25px;
+    transform: rotate(270deg);
+  }
+
+
+  /* Section 3 */
+
+  #title-img {
+    width: 350px;
+    margin: 10px 0 20px;
+  }
+
+  .port-images {
+    width: 240px;
+    height: 300px;
+  }
+
+  #insta-btn {
+    margin-top: 30px;
+  }
+
+  /* Section 4 */
+  /* Section 5 */
+  
+  #contato {
+    padding-top: 50px;
+  }
+
+  #contato-icon-box {
+    margin-top: 100px;
+  }
+
+  .contato-icons {
+    font-size: 45px;
+    margin-top: -70px;
+    margin-bottom: 50px;
+  }
+
+  
+  .contact-title {
+    font-size: 45px;
+
+  }
+
+  #contato > p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+}
+
+@media (max-width: 1024px ) {
+  /* Section 1 */
+  #home-nav > a {
+    display: none;
+  }
+
+  #home-logo {
+    height: 600px;
+
+  }
+
+  #home-slogan {
+    font-size: 70px;
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+  }
+
+  /* Section 2 */
+
+  #info-home-text-box {
+    justify-content: center;
+    width: 90vw;
+    position: relative;
+    color: white;
+    margin: auto;
+  
+  }
+  #info-home-text-box > div {
+    display: flex;
+    margin: auto;
+  }
+  
+  #info-home-text-box > h3 {
+    font-size: 30px;
+    margin: auto;
+    margin-top: -50px;
+    text-align: center;
+  
+  }
+  
+  #info-home-text-box > p {
+    width: 70vw;
+    font-size: 14px;
+    text-align: center;
+    margin: 25px auto;
+  }
+  
+  #homen-img {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    /* border: 5px solid white; */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    height: fit-content;
+    margin: auto;
+    margin-top: -25px;
+    transform: rotate(270deg);
+  }
+
+  /* Section 3 */
+  #title-img {
+    width: 450px;
+    margin: 20px 0 30px;
+  }
+
+  #insta-btn {
+    margin-top: 60px;
+  }
+
+  #home-box-images {
+    display: none;
+  }
+
+  #carousel {
+    display: block;
+  }
+  
+  /* Section 4 */
+
+  .contato-icons {
+    font-size: 45px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+
+  
+  .contact-title {
+    font-size: 45px;
+
+  }
+
+  #contato > p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
+
+
+@media (max-width: 768px ) {
+  /* Section 1 */
+  #home-nav > li {
+    display: none;
+  }
+
+  #home-logo {
+    height: 500px;
+
+  }
+
+  #home-slogan {
+    font-size: 60px;
+    margin-top: 25px;
+  }
+
+  #down-arrow {
+    bottom: 8%;
+    width: 70px;
+  }
+
+  /* Section 2 */
+
+  #info-home-text-box {
+    justify-content: center;
+    width: 90vw;
+    position: relative;
+    color: white;
+    margin: auto;
+  
+  }
+  #info-home-text-box > div {
+    display: flex;
+    margin: auto;
+  }
+  
+  #info-home-text-box > h3 {
+    font-size: 30px;
+    margin: auto;
+    margin-top: -10px;
+    text-align: center;
+  
+  }
+  
+  #info-home-text-box > p {
+    width: 80vw;
+    font-size: 16px;
+    text-align: center;
+    margin: 50px auto;
+  }
+  
+  #homen-img {
+    display: none;
+  }
+
+  /* Section 3 */
+
+  #title-img {
+    width: 400px;
+    margin: 20px 0 30px;
+  }
+  #home-box-images {
+    display: none;
+  }
+
+  #carousel {
+    display: block;
+  }
+
+  #insta-btn {
+    margin-top: 60px;
+  }
+
+  /* Section 4 */
+
+  
+  /* Section 5 */
+  #contato-container {
+    flex-direction: column;
+    width: 100%;
+
+  }
+
+  #contato-container > div {
+    width: 100%;
+    height: fit-content;
+  }
+
+  #map-box {
+    height: 300px;
+  }
+
+  #contato-map {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 428px ) {
+  /* Section 1 */
+  .home-section-orange {
+    height: 101vh;
+    width: auto;
+  }
+
+  .home-section-white {
+    height: 101vh;
+    width: auto;
+  } 
+
+
+  #home-nav > li {
+    display: none;
+  }
+
+  #home-logo {
+    height: 55vh;
+
+  }
+
+  #home-slogan {
+    font-size: 40px;
+    margin-top: 25px;
+  }
+
+  #down-arrow {
+    bottom: 10%;
+    width: 70px;
+  }
+
+  /* Section 2 */
+
+  #home-info-logo {
+    display: none;
+  }
+
+  #info-home-text-box {
+    width: 90%;
+  }
+
+  /* Section 3 */
+
+  #title-img {
+    width: 300px;
+    margin: 20px 0 50px;
+  }
+
+  #home-box-images {
+    display: none;
+  }
+
+  #carousel {
+    display: block;
+  }
+
+  /* Section 4 */
+
+  
+  /* Section 5 */
+  #contato-container {
+    flex-direction: column;
+    width: auto;
+  }
+
+  #contato-container > div {
+    width: 100%;
+    height: fit-content;
+  }
+
+  #map-box {
+    height: 300px;
+  }
+
+  #contato-map {
+    width: 100%;
+    height: 300px;
+  }
+
+  .contato-icons {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  
+  .contact-title {
+    font-size: 35px;
+
+  }
+
+  #contato {
+    padding-top: 0;
+  }
+
+  #contato > p {
+    font-size: 17px;
+    margin-top: 10px;
+  }
+
+  #footer {
+    height: 250px;
+    width: auto;
+    background-color: #000000;
+    padding: 30px;
+    
+  }
+
+  #footer > p {
+    color: rgba(255, 255, 255, 0.884);
+    text-align: center;
+
+  }
+
+}
+
+@media (max-width: 375px ) {
+  #down-arrow {
+    bottom: 8%;
+    width: 60px;
+  }
+}
