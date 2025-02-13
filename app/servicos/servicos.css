@@ -125,6 +125,7 @@
     }
     #service-box {
         width: 70vw;
+        min-height: 80vh;
     }
 
 }
