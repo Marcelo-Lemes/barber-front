@@ -76,7 +76,6 @@ export default function Services() {
 
   const addService = () => {
     setShowModal(true);
-    console.log('ok');
     
   }
 
@@ -107,7 +106,6 @@ export default function Services() {
     },[])
 
     if (loading) return <div><Loading /></div>;
-    if (error) return <div>Error: {error.message}</div>;
 
 
   return (
