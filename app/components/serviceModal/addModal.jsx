@@ -109,7 +109,7 @@ export default function AddModal({setShowModal}) {
 
         </div>
         <div id='button-box'>
-            <button onClick={(e) => handleAddService(e)} className="btn btn-outline-success">Adiconar</button>
+            <button onClick={(e) => handleAddService(e)} className="btn btn-outline-success">Adicionar</button>
             <button onClick={(e) => cancel(e)} className="btn btn-outline-danger">Cancelar</button>
         </div>
       </form>

@@ -138,6 +138,8 @@ const WorkScheduleForm = ({modal}) => {
   
       // Enviar os horários para a API
       for (const day of dataToSubmit) {
+        console.log(day);
+        
         await axios.post(
           `${backUrl}/schedules`,
           day,
@@ -152,6 +154,7 @@ const WorkScheduleForm = ({modal}) => {
       // Tratar erros
       if (error.response) {
         if (error.response.status === 500) {
+          console.log(error)
           setError('Dados inválidos.');
         } else if (error.response.status === 401) {
           setError('Você não tem permissão para isso.');
