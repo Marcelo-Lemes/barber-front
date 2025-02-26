@@ -74,7 +74,7 @@ export default function Home() {
           <img className="port-images" src="corte-2.jpg" alt="" />
         </div>
         <div style={{textAlign: 'center'}}>
-          <a href="https://www.instagram.com/reida_regua/" target="_blank" rel="noopener noreferrer">
+          <a aria-label="Veja mais no nosso intagram" href="https://www.instagram.com/reida_regua/" target="_blank" rel="noopener noreferrer">
             <button id="insta-btn" className="hero-button ">Confira nosso instagram <FaInstagram /></button>
           </a>
         </div>
@@ -85,7 +85,7 @@ export default function Home() {
       </section>
       <div id="contato-container" style={{display: 'flex'}}>
         <div id="map-box">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.79181184479398!2d-45.70554445531556!3d-22.252634533537577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cba3dd86d63329%3A0x460832be8326b352!2sRei%20da%20R%C3%A9gua%20%7C%20Barbearia!5e0!3m2!1spt-BR!2sbr!4v1736966017253!5m2!1spt-BR!2sbr" id="contato-map" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+          <iframe title="Barbearia Rei da Régua" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.79181184479398!2d-45.70554445531556!3d-22.252634533537577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cba3dd86d63329%3A0x460832be8326b352!2sRei%20da%20R%C3%A9gua%20%7C%20Barbearia!5e0!3m2!1spt-BR!2sbr!4v1736966017253!5m2!1spt-BR!2sbr" id="contato-map" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div id="contato">
           <h3 className="contact-title">Contato</h3>
@@ -95,10 +95,10 @@ export default function Home() {
           <p>Sábado .............. 08:00 às 17:00</p>
           <div id="contato-icon-box">
           
-            <a href="https://wa.me/5535991876307" target="_blank" rel="noopener noreferrer">
+            <a aria-label="Entre em contato com a gente via whatsapp." href="https://wa.me/5535991876307" target="_blank" rel="noopener noreferrer">
               <FaWhatsapp className="contato-icons whats"/>
             </a>
-            <a href="https://www.instagram.com/reida_regua/" target="_blank" rel="noopener noreferrer">
+            <a aria-label="Entre em contato com a gente via instagram."  href="https://www.instagram.com/reida_regua/" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="contato-icons insta"/>
             </a>
           </div>
